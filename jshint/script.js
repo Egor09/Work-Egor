@@ -18,12 +18,12 @@ console.log(p);
 
 let appData = {
     budget: {
-        money: a
+        a
     },
     timeData: {
-        time: b
+        b
     },
-    expenses: {  d, p
+    expenses: {  d, p, d, p
     },
     optionalExpenses: {},
     income: {},
