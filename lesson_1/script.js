@@ -33,11 +33,12 @@ let appData = {
 };
 console.log(appData);
 
-appData.expenses.d=p;
-appData.expenses.dd=pp;
+appData.expenses[d]=p;
+appData.expenses[dd]=pp;
 
 budgetPerDay = a / 30;
 alert(budgetPerDay);
 
 console.log(budgetPerDay);
+
 
