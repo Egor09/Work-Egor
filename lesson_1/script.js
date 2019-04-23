@@ -24,19 +24,17 @@ console.log(pp);
 
 
 let appData = {
-    budget: {
-        a
-    },
-    timeData: {
-        b
-    },
-    expenses: {  d, p, dd, pp
-    },
+    budget: a,
+    timeData: b,
+    expenses: {},
     optionalExpenses: {},
     income: [],
     savings: false
 };
 console.log(appData);
+
+appData.expenses.d=p;
+appData.expenses.dd=pp;
 
 budgetPerDay = a / 30;
 alert(budgetPerDay);
