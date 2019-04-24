@@ -1,12 +1,12 @@
 'use strict';
 
-var money = ("Ваш бюджет на месяц?");
-var time = ("Введите дату в формате YYYY-MM-DD");
-var mustPrice = ("Введите обязательную статью расходов в этом месяце");
-var price = ("Во сколько обойдется?");
-var mustPriceSecond = ("Введите обязательную статью расходов в этом месяце");
-var priceSecond = ("Во сколько обойдется?");
-var budgetPerDay;
+ let money = ("Ваш бюджет на месяц?"),
+     time = ("Введите дату в формате YYYY-MM-DD"),
+     mustPrice = ("Введите обязательную статью расходов в этом месяце"),
+     price = ("Во сколько обойдется?"),
+     mustPriceSecond = ("Введите обязательную статью расходов в этом месяце"),
+     priceSecond = ("Во сколько обойдется?"),
+     budgetPerDay;
 
 let a = prompt(money);
 let b = prompt(time);
@@ -39,6 +39,4 @@ appData.expenses[dd]=pp;
 budgetPerDay = a / 30;
 alert(budgetPerDay);
 
-console.log(budgetPerDay);
-
-
+console.log(budgetPerDay)
