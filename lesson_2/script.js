@@ -19,7 +19,9 @@ for (let i = 0; i < 2; i++) {
         && a != '' && b != '' && a.length < 50) { 
         console.log("done");
         appData.expenses[a] = b;
-    } else {
+    } 
+    else {
+        i--;
     }
 };
 
@@ -27,9 +29,9 @@ for (let i = 0; i < 2; i++) {
 
 
 
+
 //     let i = 0
-// while (i < 2) {
-    
+// while (i < 2) {   
 // let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
 //     b = prompt("Во сколько обойдется?", "");
 // if ((typeof(a))=== 'string' && a != null && b != null
@@ -69,6 +71,6 @@ if(appData.moneyPerDay < 100) {
     console.log("Высокий уровень достатка");
 } else {
     console.log("Произошла ошибка")
-}
-
+};
+console.log(appData)
 
