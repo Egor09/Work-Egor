@@ -1,3 +1,4 @@
+'use strict';
 let money = +prompt("Ваш бюджет на месяц?", ""),
     time = prompt("Введите дату в формате YYYY-MM-DD", "");
 
@@ -13,7 +14,7 @@ let appData = {
 
 for (let i = 0; i < 2; i++) {
     let a = prompt("Введите обязательную статью расходов в этом месяце", ""),
-        b = prompt("Во сколько обойдется?", "");
+        b = +prompt("Во сколько обойдется?", "");
     
     if ( (typeof(a))=== 'string' && a != null && b != null
         && a != '' && b != '' && a.length < 50) { 
