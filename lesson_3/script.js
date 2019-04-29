@@ -69,13 +69,16 @@ function checkSavings() {
 }
 checkSavings();
 
-let a,b,c;
+let a;
 function chooseOptExpenses() {
+    for (let i = 1; i < 4; i++) {
         a = prompt("Статья необязательных расходов?", "");
-        b = prompt("Статья необязательных расходов?", "");
-        c = prompt("Статья необязательных расходов?", "");
-        appData.optionalExpenses [1] = a;
-        appData.optionalExpenses [2] = b;    // если есть более легкие варианты 
-        appData.optionalExpenses [3] = c;    // записи этой функции, то прошу рассказать:)
+
+    if ( (typeof(a))=== 'string' && a != null && a != ''&& a.length < 50) {
+            appData.optionalExpenses[i] = a;
+        } else {
+            i--;
+        }
+    }      
 }
 chooseOptExpenses();
