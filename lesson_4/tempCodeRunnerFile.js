@@ -1,6 +1,20 @@
-let s = 0;
-    A = 10;
-for (i = 0; i < A-1; i++);
-s = A[i] - A[i+2];
+'use strict';
+let options = {
+    width: 1024,
+    height: 1024,
+    name: "test",
+};
 
-console.log(s)
+console.log(options.name);
+options.bool = false;
+options.colors = {
+    border: "black",
+    bg: "red"
+};
+delete options.bool;
+console.log(options);
+
+for (let key in options) {
+    console.log('Свойство ' + key + ' имеете значение ' + options[key]);
+}
+console.log(Object.keys(options).length);
