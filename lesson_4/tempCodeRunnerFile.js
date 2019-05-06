@@ -1,20 +1,9 @@
-'use strict';
-let options = {
-    width: 1024,
-    height: 1024,
-    name: "test",
-};
+nextPrime:
+  for (var i = 2; i <= 100; i++) {
 
-console.log(options.name);
-options.bool = false;
-options.colors = {
-    border: "black",
-    bg: "red"
-};
-delete options.bool;
-console.log(options);
+    for (var j = 2; j < i; j++) {
+      if (i % j == 0) continue nextPrime;
+    }
 
-for (let key in options) {
-    console.log('Свойство ' + key + ' имеете значение ' + options[key]);
-}
-console.log(Object.keys(options).length);
+   console.log(i); // простое
+  }
