@@ -6,14 +6,14 @@ let column = document.querySelectorAll('.column')[1],
     body = document.querySelector('body'),
     prt = document.querySelector('#prompt');
 
-    prt.textComtent = prompt('Как вы относитесь к технике Apple?');
+    prt.textContent = prompt('Как вы относитесь к технике Apple?');
    
     
     column.removeChild(adv);
 
     body.style.backgroundImage = "url(img/apple_true.jpg)";
 
-    let fifth = document.createElement('fifth');
+let fifth = document.createElement('fifth');
     fifth.classList.add('menu-item');
     fifth.innerHTML = 'Пятый пункт';
     ul.appendChild(fifth);

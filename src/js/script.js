@@ -12,6 +12,7 @@ let start = document.getElementById('start'),
 
     expensesItemBtn = document.getElementsByName('expenses-item-btn'),
     optionalexpensesBtn = document.getElementsByName('optionalexpenses-btn'),
+    countBudgetBtn = document.getElementsByName('count-budget-btn'),
 
     optionalexpensesItem = document.querySelectorAll('.optionalexpenses-item')[0, 1, 2],
 
@@ -24,4 +25,22 @@ let start = document.getElementById('start'),
     month = document.querySelector('.month'),
     day = document.querySelector('.day');
 
+console.log(start);
+console.log(budgetV);
+console.log(daybudgetV);
+console.log(levelV);
+console.log(expensesV);
+console.log(optionalexpensesV);
+console.log(incomeV);
+console.log(monthsavingsV);
+console.log(yearsavingsV);
 console.log(expensesItem);
+console.log(expensesItemBtn);
+console.log(optionalexpensesBtn);
+console.log(optionalexpensesItem);
+console.log(chooseIncomeLabel);
+console.log(checksavings);
+console.log(sum);
+console.log(percent);
+console.log(year);
+console.log(countBudgetBtn);
