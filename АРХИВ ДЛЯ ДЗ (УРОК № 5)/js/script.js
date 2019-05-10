@@ -1,7 +1,7 @@
 let column = document.querySelectorAll('.column')[1],
     adv = document.querySelectorAll('.adv')[0],
     ul = document.querySelector('.menu'),
-    li = document.querySelectorAll('.menu-item'),
+    li = document.querySelector('.menu-item'),
     title = document.querySelector('.title'),
     body = document.querySelector('body'),
     prt = document.querySelector('#prompt');

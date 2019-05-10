@@ -8,22 +8,22 @@ let start = document.getElementById('start'),
     incomeV = document.getElementsByClassName('income-value')[0],
     monthsavingsV = document.getElementsByClassName('monthsavings-value')[0],
     yearsavingsV = document.getElementsByClassName('yearsavings-value')[0],
-    expensesItem = document.getElementsByClassName('expenses-item')[0, 1, 2, 3],
+    expensesItem = document.querySelectorAll('expenses-item'),
 
-    expensesItemBtn = document.getElementsByName('expenses-item-btn'),
-    optionalexpensesBtn = document.getElementsByName('optionalexpenses-btn'),
-    countBudgetBtn = document.getElementsByName('count-budget-btn'),
+    expensesItemBtn = document.getElementsByTagName('expenses-item-btn')[0],
+    optionalexpensesBtn = document.getElementsByTagName('optionalexpenses-btn')[0],
+    countBudgetBtn = document.getElementsByTagName('count-budget-btn')[0],
 
-    optionalexpensesItem = document.querySelectorAll('.optionalexpenses-item')[0, 1, 2],
+    optionalexpensesItem = document.querySelectorAll('.optionalexpenses-item'),
 
 
-    chooseIncomeLabel = document.querySelector('.choose-income-label'),
-    checksavings = document.querySelector('.checksavings'),
-    sum = document.querySelector('.sum'),
-    percent = document.querySelector('.percent'),
-    year = document.querySelector('.year'),
-    month = document.querySelector('.month'),
-    day = document.querySelector('.day');
+    chooseIncome = document.querySelector('.choose-income'),
+    savings = document.getElementById('savings'),
+    sum = document.getElementById('sum'),
+    percent = document.getElementById('percent'),
+    yearValue = document.querySelector('.year-value'),
+    monthValue = document.querySelector('.month-value'),
+    dayValue = document.querySelector('.day-value');
 
 console.log(start);
 console.log(budgetV);
@@ -38,9 +38,11 @@ console.log(expensesItem);
 console.log(expensesItemBtn);
 console.log(optionalexpensesBtn);
 console.log(optionalexpensesItem);
-console.log(chooseIncomeLabel);
-console.log(checksavings);
+console.log(chooseIncome);
+console.log(savings);
 console.log(sum);
 console.log(percent);
-console.log(year);
+console.log(yearValue);
+console.log(monthValue);
+console.log(dayValue);
 console.log(countBudgetBtn);
