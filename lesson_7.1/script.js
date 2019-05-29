@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Timer
 
-    let deadline = '2019-5-29';
+    let deadline = '2019-5-28';
 
     function getTimeRemaining(endTime) {
         let t = Date.parse(endTime) - Date.parse(new Date()),
@@ -88,19 +88,20 @@ window.addEventListener('DOMContentLoaded', function() {
         close = document.querySelector('.popup-close'),
         descriptionBtn = document.querySelectorAll('.description-btn');
 
-
-        descriptionBtn.forEach(function (element) {
-            element.addEventListener('click', function(){
-                overlay.style.display = 'block';
-                this.classList.add('more-splash');
-                document.body.style.overflow = 'hidden';
-            })
-        })
+        function modalWindow (elem) {
+        overlay.style.display = 'block';
+        elem.classList.add('more-splash');
+        document.body.style.overflow = 'hidden';
+}
 
     more.addEventListener('click', function() {
-        overlay.style.display = 'block';
-        this.classList.add('more-splash');
-        document.body.style.overflow = 'hidden';
+        modalWindow(more);
+    })
+
+    descriptionBtn.forEach(function (element) {
+        element.addEventListener('click', function(){
+            modalWindow(element);
+        })
     })
 
     close.addEventListener('click', function() {
@@ -109,3 +110,5 @@ window.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     })
 });
+
+
