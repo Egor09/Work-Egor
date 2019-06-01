@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
         info = document.querySelector('.info-header'),
         tabContent = document.querySelectorAll('.info-tabcontent');
 
-    function hideTabContent(a) {
+    let hideTabContent = (a) => {
         for (let i = a; i < tabContent.length; i++) {
             tabContent[i].classList.remove('show');
             tabContent[i].classList.add('hide');
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     hideTabContent(1);
 
-    function showTabContent(b) {
+    let showTabContent = (b) => {
         if (tabContent[b].classList.contains('hide')) {
             tabContent[b].classList.remove('hide');
             tabContent[b].classList.add('show');
@@ -37,17 +37,17 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Timer
 
-    let deadline = '2019-5-28';
+    let deadline = '2019-6-28';
 
-    function getTimeRemaining(endTime) {
+    let getTimeRemaining = (endTime) => {
         let t = Date.parse(endTime) - Date.parse(new Date()),
         seconds = Math.floor((t/1000) % 60),
         minutes = Math.floor((t/1000/60) % 60),
         hours = Math.floor((t/(1000*60*60)));
             
-        if (hours < 10) hours = "0" + hours;
-        if (minutes < 10) minutes = "0" + minutes;
-        if (seconds < 10) seconds = "0" + seconds;
+        if (hours < 10) hours = `0${hours}`;
+        if (minutes < 10) minutes = `0${minutes}`;
+        if (seconds < 10) seconds = `0${seconds}`;
 
         return {
             'total' : t,
@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', function() {
         };
     }
 
-    function setClock(id, endTime) {
+    let setClock = (id, endTime) => {
         let timer = document.getElementById(id),
             hours = timer.querySelector('.hours'),
             minutes = timer.querySelector('.minutes'),
@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', function() {
         close = document.querySelector('.popup-close'),
         descriptionBtn = document.querySelectorAll('.description-btn');
 
-        function modalWindow (elem) {
+    let modalWindow = (elem) => {
         overlay.style.display = 'block';
         elem.classList.add('more-splash');
         document.body.style.overflow = 'hidden';
