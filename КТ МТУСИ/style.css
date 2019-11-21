@@ -1,0 +1,183 @@
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background: #B7D4FF;
+} 
+.container {
+    /* display: block; */
+    max-width: 980px;
+    height: 100%;
+    justify-content: space-between;
+    margin: 20px auto;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+    border: 1px solid;
+}
+.header {
+    display: block;
+}
+.name-logo {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-logo img {
+    height: 155px;
+    width: 980px;
+}
+
+/* МЕНЮ ЗАГОЛОВКА */
+
+
+.menu-style {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.menu-style:hover {
+    background-color: #6F86D6;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.dws-menu *{
+    margin: 0;
+    padding: 0;
+   }
+   .dws-menu ul,
+   .dws-menu ol{
+    list-style: none;
+   }
+   .dws-menu > ul{
+    display: flex;
+    justify-content: center;
+   }
+   .dws-menu > ul li{
+    width: 100%;
+    position: relative;            
+    text-align: center;
+   }
+   .dws-menu > ul li a{
+    display: block;
+    background:#7EB3FF;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+   }
+   .dws-menu li a:hover{
+    background-color: #6F86D6;
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+   }
+   
+   /*sub menu*/
+   .dws-menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+   }
+   .dws-menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #7EB3FF;
+   }
+   .dws-menu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0;
+   }
+   .dws-menu li:hover > ul{
+    display: block;
+   }
+
+/* ГЛАВНАЯ СТРАНИЦА */
+
+.main-page { 
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+/* ЛЕВАЯ ЧАСТЬ */
+
+.main-info {
+    flex-basis: 25%;
+}
+
+/* ТЕСТ ЧАСТЬ */
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu a{
+	background:#3d3d3d;
+	color: #fff;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid #666;
+	transition: 0.5s all;
+}
+.sidebar{
+    width: 100%;
+    height: 900px;
+}
+.menu a:hover{
+	background: #666;
+	padding: 10px 0 10px 20px;
+}
+.menu li:first-child a, .menu li .v_menu li:first-child a{
+	border-radius: 3px 3px 0 0;
+}
+.menu li:last-child a, .menu li .v_menu li:last-child a{
+	border-radius: 0 0 3px 3px;
+	border-bottom: 0;
+}
+.menu li .v_menu li a{
+	border-radius: 0;
+}
+.p_menu{
+    position: relative;
+}
+.v_menu{
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	top: -9999px;
+	opacity: 0;
+	border-left: 10px solid transparent;
+	transition: 0.5s opacity;
+}
+.p_menu:hover .v_menu{
+	opacity: 1;
+	top: 0;
+}
+.p_menu::after{
+	content: "";
+	position: absolute;
+	border:5px solid;
+	border-color: transparent transparent transparent #eee;
+	top:1em;
+	right: 0.7em;
+	transition: 0.5s;
+}
+.p_menu:hover::after{
+	transform: scaleX(-1);
+}
+
+ 
